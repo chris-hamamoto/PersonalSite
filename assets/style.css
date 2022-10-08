@@ -35,9 +35,12 @@ img {
 	height:  auto;
 }
 
+
 /* uncomment the code below to set the grid */
 
-/*#grid {
+/* this is a comment */
+
+#grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -57,4 +60,4 @@ body {
 
 #right-column {
 	background: #333;
-}*/
+}
