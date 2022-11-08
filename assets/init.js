@@ -7,6 +7,8 @@ function to be executed
 */
 
 $(document).ready(function() {
+
+    
     
     /* 
     jquery follows its own syntax. it uses

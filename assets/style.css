@@ -8,12 +8,13 @@
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	background: beige;
 	transition: background 500ms ease;
 }
 
 p, li {
-	font-size:  22px;
-	line-height: 30px;
+	font-size:  18px;
+	line-height: 28px;
 }
 
 /* adjusting spacing */
@@ -33,6 +34,22 @@ ul, ol {
 img {
 	max-width: 100%;
 	height:  auto;
+}
+
+/* link */
+
+a {
+	background: white;
+	color: black;
+	padding: 0px 8px;
+	border-radius: 16px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+a:hover {
+	background: black;
+	color: white;
 }
 
 
@@ -59,5 +76,5 @@ body {
 }
 
 #right-column {
-	background: #333;
+	background: olive;
 }
