@@ -6,9 +6,11 @@
 
 /* adjusting fonts */
 
+
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
-	background: beige;
+	background: lightgrey;
 	transition: background 500ms ease;
 }
 
@@ -57,6 +59,12 @@ a:hover {
 
 /* this is a comment */
 
+#language-toggle {
+	position: fixed;
+	top:  10px;
+	right:  10px;
+}
+
 #grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -72,9 +80,112 @@ body {
 	height: 100vh;
 }
 
-#left-column {
+#right-column {
+	background: yellow;
 }
 
-#right-column {
-	background: olive;
+#right-column img {
+	width: auto;
+}
+
+/* hide pokemon */
+
+#raichu, #pikachu, #pokeball {
+	display: none;
+}
+
+
+@media only screen and (max-width: 896px) {
+
+	body {
+		overflow: scroll;
+		background: yellow;
+	}
+
+	#grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.scroll {
+		padding: 10px;
+		overflow: auto;
+		height: auto;
+	}
+
+
+	#right-column {
+		background: black;
+	}
+
+
+	#pikachu {
+		display: block;
+	}
+
+	#raichu, #pichu, #pokeball {
+		display: none;
+	}
+
+
+}
+
+@media only screen and (max-width: 414px) {
+	body {
+		background: orange;
+	}
+
+	.scroll {
+		padding: 0px;
+	}
+
+	#right-column {
+		background: red;
+	}
+
+	#raichu {
+		display: block;
+	}
+
+	#pikachu, #pichu, #pokeball {
+		display: none;
+	}
+
+}
+
+@media only print {
+	body {
+		background: white;
+		text-align: center;
+	}
+
+	#grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.scroll {
+		padding: 10px;
+		overflow: auto;
+		height: auto;
+	}
+
+	ul, li {
+		list-style-position: inside;
+	}
+
+	#right-column img{
+		width: 5cm;
+	}
+
+	#pokeball {
+		display: block;
+		margin: auto;
+		width: 1cm;
+	}
+
+	#raichu, #pikachu, #pichu {
+		display: none;
+	}
+
 }
